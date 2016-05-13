@@ -1,0 +1,68 @@
+/*********************************************
+               GLOBAL STYLES
+**********************************************/
+
+
+
+/*********************************************
+                GENERAL STYLE
+*********************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: green;
+}
+
+.wrapper {
+  width: 90%;
+}
+
+
+
+/*********************************************
+                HEADER STYLE
+*********************************************/
+
+.nav-bar-header {
+  background: white;
+}
+
+.form-group input[type="text"] {
+  width: 850px;
+  /*color: ;*/
+}
+
+label {
+  margin: 0 50px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.disabled {
+  color: grey;
+}
+
+
+#submit-button {
+  margin-left: 1rem;
+  width: 10rem;
+}
+
+#labelPurchased {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.cards {
+  background: white;
+  border: 8px solid;
+  margin-bottom: 20px;
+}
+
+.orange {
+  background-color: orange;
+  border-width: 15px;
+}

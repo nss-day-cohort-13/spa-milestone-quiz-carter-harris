@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SPA - Quiz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body id="the-whole-body">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed">
+        </button>
+        <a class="navbar-brand" href="#">Car-ter Cars</a>
+      </div>
+
+      <form class="navbar-form navbar-left form">
+        <div class="form-group">
+          <input id="text-input" class="form-control" type="text" placeholder="Put something here to tell the user what to do">
+        </div>
+        <label id="labelPurchased" class="disabled" for="purchased"><input id="purchased" type="checkbox">Purchased?</label>
+        <button id="submit-button" class="btn btn-default" type="button">Submit</button>
+      </form>
+
+    </div>
+    <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- This is the output area where car cards will populate in columns. -->
+  <div id="container" class="container wrapper">
+    <!-- page wrapper -->
+    <div id="card-output" class="row"></div>
+  </div>
+  <!-- End page wrapper -->
+
+
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="carlot.js" type="text/javascript"></script>
+  <script src="car-cards.js" type="text/javascript"></script>
+  <script src="augeventhandlers.js" type="text/javascript"></script>
+  <script src="quiz.js" type="text/javascript"></script>
+
+</body>
+
+</html>
