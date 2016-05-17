@@ -4,7 +4,7 @@ var CarLot = (function(carlot) {
 
   // DOM element variables
   var cardsInDOM = document.getElementsByClassName("cards"); // cardsInDOM is an array of inventory divs, class given to div that holds car elements
-  var form = document.getElementsByClassName("form");
+  var form = document.getElementById("form");
   var textInput = document.getElementById("text-input"); // text input in nav bar
   var submitButton = document.getElementById("submit-button"); // submit button in nav bar
   var cardContainer = document.getElementById("container");
@@ -37,21 +37,18 @@ var CarLot = (function(carlot) {
     event.preventDefault();
   }
 
+  // selectedID holds the id of whichever card it clicked on, function recives that line `13 car-cards.js
   carlot.setSelectedID = function(divID) {
     selectedID = divID;
     console.log("divID", selectedID);
   }
 
-  function purchasedButton(event) {
-
-  }
 
   //activateEvents method adds all DOM element event listeners
   carlot.activateEvents = function() { // took out "inventory" as a argument
-    labelPurchased.addEventListener("click", purchasedButton)
     cardContainer.addEventListener("click", textInputFocusEvent); //
     textInput.addEventListener("keyup", replaceTextInput); // line 39
-    form[0].addEventListener("submit", defaultEnter); // line 44
+    form.addEventListener("submit", defaultEnter); // line 44
 
     for (var i = 0; i < cardsInDOM.length; i++) {
       cardsInDOM[i].addEventListener("click", function(){
