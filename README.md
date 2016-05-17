@@ -1,27 +1,6 @@
+
 # Single Page Applications Quiz
 
-## Setup
-
-1. Create the working directory for the quiz first.
-
-    ```bash
-    mkdir -p ~/workspace/quizzes/spa && cd $_
-    ```
-
-1. Clone this repository and `cd` into the directory it creates.
-1. Now run the following commands.
-
-    ```bash
-    git checkout -b quiz
-    touch index.html
-    touch quiz.js
-    touch quiz.css
-    touch inventory.json
-    ```
-
-You are now ready to work in the `quiz` branch.
-
-When your work in complete, push up the branch (`git push origin quiz`) and submit the pull request on Github.
 
 ## Instructions
 
@@ -75,7 +54,7 @@ You operate a used car lot, and need to have an application where you can update
 
 function populatePage (inventory) {
   // Loop over the inventory and populate the page
-  
+
   // Now that the DOM is loaded, establish all the event listeners needed
   CarLot.activateEvents();
 }
@@ -106,3 +85,29 @@ var CarLot = (function () {
 
 })();
 ```
+
+
+
+
+## Setup
+
+1. Create the working directory for the quiz first.
+
+    ```bash
+    mkdir -p ~/workspace/quizzes/spa && cd $_
+    ```
+
+1. Clone this repository and `cd` into the directory it creates.
+1. Now run the following commands.
+
+    ```bash
+    git checkout -b quiz
+    touch index.html
+    touch quiz.js
+    touch quiz.css
+    touch inventory.json
+    ```
+
+You are now ready to work in the `quiz` branch.
+
+When your work in complete, push up the branch (`git push origin quiz`) and submit the pull request on Github.
